@@ -18,7 +18,7 @@ export default function HomePage() {
         <div className="max-w-2xl text-center">
           <h2 className="text-3xl font-semibold mb-4">About Me</h2>
           <p>
-            I’m a full-stack developer passionate about building sleek apps with React & Next.js.
+            I&apos;m a full-stack developer passionate about building sleek apps with React &amp; Next.js.
           </p>
         </div>
       </section>
