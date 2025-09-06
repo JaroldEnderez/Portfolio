@@ -10,7 +10,7 @@ export default function HomePage() {
       <section id="home" className="min-h-screen flex flex-col items-start justify-center   bg-gray-100 fade-in">
         <div className="flex flex-col w-1/2 pl-10">
           <h1 className="text-md font-bold">Web Design / Branding / Full Stack Development</h1>
-          <p className="text-lg mt-6 mb-10">Hello there, My name is Jarold. I find passion in solving modern problems and creating intuitive designs for seamless interaction. Let's work.</p>
+          <p className="text-lg mt-6 mb-10">Hello there, My name is Jarold. I find passion in solving modern problems and creating intuitive designs for seamless interaction. Let&apos;s work.</p>
         </div>
       </section>
 
