@@ -1,6 +1,7 @@
 // app/page.js
 import Navbar from "@/components/Navbar";
 import { projectList } from "./projectList";
+import Image from 'next/image'; // Import Next.js Image component
 
 
 export default function HomePage() {
@@ -32,7 +33,7 @@ export default function HomePage() {
         <div className="flex gap-x-4 pl-10">
           {projectList.map((project, idx) => (
             <div className="flex flex-col border border-gray-300 rounded-lg shadow-sm p-4" key={idx}>
-              <img src={project.img} alt="Project Image" className="p-2 w-full h-auto"></img>
+              <Image src={project.img} alt="Project Image" className="p-2 w-full h-auto" width={500} height={300}></Image> {/* Replaced <img> with <Image /> */}
               <h2 className="text-lg text-black font-black">{project.title}</h2>
               <p className="font-medium">{project.description}</p>
               <div className="italic font-thin text-gray-600">
