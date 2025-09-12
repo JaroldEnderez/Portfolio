@@ -9,7 +9,7 @@ export default function Navbar() {
         <h1 className="text-2xl font-bold">JaroldEnderez</h1>
         <div className="flex space-x-6">
           <a href="#home" className="hover:text-blue-600">Home</a>
-          <a href="#about" className="hover:text-blue-600">About</a>
+          <a href="#about" className="hover:text-blue-600">Experience</a>
           <a href="#projects" className="hover:text-blue-600">Projects</a>
           <a href="#contact" className="hover:text-blue-600">Contact</a>
         </div>

@@ -1,16 +1,21 @@
+import movieImage from "./images/movie-app.png"
+import wordle from "./images/wordle.png"
+
 export const projectList = [
     {
-        title: "TMDB Movie Browsing App",
+        title: "TMDB API Movie Browsing App",
         description: "A MERN stack app that fetches movies from an API.",
-        image: "/images/movie-app.png",
-        link: "https://github.com/you/movie-app",
-        tech: ["React", "Node.js", "MongoDB"]
+        image: movieImage,
+        link: "https://movie-app-clean-fuoh3wfhl-jaroldenderezs-projects.vercel.app/",
+        tech: ["React", "Node.js", "MongoDB"],
+        subtopics: ["Database Management", "User Authentication", "API Integration", "Responsive UI"],
     },
     {
         title: "Wordle Clone",
-        description: "A MERN stack app that fetches movies from an API.",
-        image: "/images/movie-app.png",
-        link: "https://wordle-clone-p5mhzt9w4-jaroldenderezs-projects.vercel.app/",
-        tech: ["React", "Node.js", "MongoDB"]
+        description: "New York Times browser game I made from scratch. Enjoy!",
+        image: wordle,
+        link: "https://wordle-clone-achv.vercel.app/",
+        tech: ["React", "Node.js", "MongoDB"],
+        subtopics: ["Game Logic", "State Management", "Local Storage", "Responsive Design"],
     }
 ]

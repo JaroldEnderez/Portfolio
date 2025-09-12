@@ -7,6 +7,7 @@ import company1 from "./images/ABHealth.png";
 import company2 from "./images/FirstAid.png";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Jarold from "./images/Jarold.jpg"
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
@@ -19,13 +20,16 @@ export default function HomePage() {
       {/* Home Section */}
       <motion.section
         id="home"
-        className="min-h-screen flex flex-col items-start justify-center bg-gray-100 fade-in"
+        className="min-h-screen flex items-center justify-between bg-gray-100 fade-in px-10"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <div className="flex flex-col w-1/2 pl-10">
+        {/* Left side: Text */}
+        
+        <div className="flex flex-col w-1/2">
+        
           <h1 className="text-md font-bold">
             Web Design / Branding / Full Stack Development
           </h1>
@@ -35,7 +39,24 @@ export default function HomePage() {
             Let&apos;s work.
           </p>
         </div>
+
+        {/* Right side: Interactive tiles */}
+        <div className="flex flex-wrap w-1/2 justify-center gap-4">
+          {["React", "Node.js", "MongoDB", "Tailwind", "Next.js", "Framer Motion", "Wordpress", "Elementor"].map(
+            (tech, idx) => (
+              <motion.div
+                key={idx}
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="bg-white shadow-lg rounded-lg p-6 w-32 h-32 flex items-center justify-center cursor-pointer hover:bg-blue-100"
+              >
+                <span className="font-semibold text-gray-700">{tech}</span>
+              </motion.div>
+            )
+          )}
+        </div>
       </motion.section>
+
 
       {/* About Section */}
       <motion.section
@@ -116,23 +137,25 @@ export default function HomePage() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <Link href={project.link}>
-                <Image
-                  src={project.img}
-                  alt="Project Image"
-                  className="p-2 w-full h-auto rounded-md hover:opacity-80 transition"
-                  width={500}
-                  height={300}
-                />
+              <Link href={project.link} target="_blank" rel="noopener noreferrer">
+                <div className="w-full h-64 overflow-hidden rounded-md">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover hover:opacity-80 transition"
+                    width={500}
+                    height={300}
+                  />
+                </div>
               </Link>
 
               <h2 className="text-lg text-black font-black mt-2">
                 {project.title}
               </h2>
               <p className="font-medium">{project.description}</p>
-              <div className="italic font-thin text-gray-600">
+              <div className="italic font-thin text-gray-600 gap-3 flex mt-2">
                 {project.tech.map((t, i) => (
-                  <span key={i}>
+                  <span key={i} className="rounded-full px-3 py-2 bg-gray-300">
                     {t}
                     {i !== project.tech.length - 1 && ", "}
                   </span>
@@ -140,7 +163,7 @@ export default function HomePage() {
               </div>
 
               <Link href={project.link}>
-                <button className="mt-4 rounded-full bg-black text-white px-3 py-1 text-sm hover:bg-blue-700">
+                <button className="mt-2 rounded-full bg-black text-white px-3 py-1 text-sm hover:bg-blue-700">
                   View Project →
                 </button>
               </Link>
