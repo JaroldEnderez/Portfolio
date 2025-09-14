@@ -47,7 +47,7 @@ export default function HomePage() {
           </h1>
           <p className="text-lg sm:text-xl mt-4 sm:mt-6 mb-6 sm:mb-10">
             Hello there, My name is Jarold. I find passion in solving modern
-            problems and creating intuitive designs for seamless interaction. Let's work.
+            problems and creating intuitive designs for seamless interaction. Let&apos;s work.
           </p>
         </div>
 
