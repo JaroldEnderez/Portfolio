@@ -98,7 +98,7 @@ export default function HomePage() {
               <Image src={company1} alt="Company 1" className="hover:opacity-80 transition" width={120} height={60} />
             </a>
             <a href="https://abfirstaid.com.au/" target="_blank" rel="noopener noreferrer">
-              <Image src={company2} alt="Company 2" className="hover:opacity-80 transition" width={120} height={60} />
+              <Image src={company2} alt="Company 2" className="hover:opacity-80 transition" width={200} height={60} />
             </a>
           </div>
         </div>
@@ -164,7 +164,7 @@ export default function HomePage() {
         viewport={{ once: true }}
       >
         <h2 className="text-2xl sm:text-3xl font-semibold mb-6">Contact</h2>
-        <p className="mb-8 text-gray-700 text-center sm:text-lg">Let’s connect! You can find me here:</p>
+        <p className="mb-8 text-gray-700 text-center sm:text-lg">Let&apos;s connect! You can find me here:</p>
 
         <div className="flex flex-wrap gap-6 text-4xl text-gray-700 justify-center">
           <a href="https://github.com/JaroldEnderez" target="_blank" rel="noopener noreferrer" className="hover:text-black transition">
