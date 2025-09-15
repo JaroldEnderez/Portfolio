@@ -6,7 +6,7 @@ export const projectList = [
         title: "TMDB API Movie Browsing App",
         description: "A MERN stack app that fetches movies from an API.",
         image: movieImage,
-        link: "https://movie-app-clean-5vj8cqdxj-jaroldenderezs-projects.vercel.app/",
+        link: "https://movie-app-clean.vercel.app/",
         tech: ["React", "Node.js", "MongoDB"],
         subtopics: ["Database Management", "User Authentication", "API Integration", "Responsive UI"],
     },
