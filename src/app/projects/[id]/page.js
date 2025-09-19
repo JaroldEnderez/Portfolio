@@ -1,5 +1,6 @@
 "use client"
 import { projectList } from '@/app/projectList'
+import { use } from 'react'
 import { motion } from 'framer-motion'
 
 const fadeLeft = {
@@ -13,7 +14,8 @@ const fadeUp = {
 };
 
 export default function ProjectsPage({params}) {
-  const project = projectList.find((p) => p.id === params.id)
+  const { id } = use(params)
+  const project = projectList.find((p) => p.id === id)
 
   if (!project) return (<p className='p-8'>Project not found</p>)
 

@@ -34,7 +34,7 @@ export default function HomePage() {
       {/* Home Section */}
       <motion.section
         id="home"
-        className="min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-between bg-gray-100 px-4 sm:px-10 gap-6 md:gap-8 py-10 md:py-0"
+        className="min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-between bg-gray-100 px-4 sm:px-10 gap-6 md:gap-8 py-10 md:py-0 scroll-mt-16"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -81,7 +81,7 @@ export default function HomePage() {
       {/* About Section */}
       <motion.section
         id="about"
-        className="h-auto flex flex-col items-center bg-black px-4 sm:px-10 py-10"
+        className="h-auto flex flex-col items-center bg-black px-4 sm:px-10 py-10 scroll-mt-16"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -93,7 +93,7 @@ export default function HomePage() {
           </h3>
           <hr className="border-gray-400 mb-6 bg-white w-full" />
 
-          <div className="flex flex-wrap justify-center items-center gap-6 mt-6">
+          <div className="flex flex-wrap justify-center items-center gap-x-10 mt-6">
             <a href="https://abhealthandfitness.com.au/" target="_blank" rel="noopener noreferrer">
               <Image src={company1} alt="Company 1" className="hover:opacity-80 transition" width={120} height={60} />
             </a>
@@ -107,7 +107,7 @@ export default function HomePage() {
       {/* Projects Section */}
       <motion.section
         id="projects"
-        className="min-h-screen flex flex-col items-center bg-gray-100 px-4 sm:px-10 py-10"
+        className="min-h-screen flex flex-col bg-gray-100 px-4 sm:px-10 py-10 scroll-mt-16"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -157,7 +157,7 @@ export default function HomePage() {
       {/* Contact Section */}
       <motion.section
         id="contact"
-        className="min-h-screen flex flex-col items-center justify-center bg-gray-200 px-4 sm:px-10 py-10"
+        className="min-h-screen flex flex-col items-center justify-center bg-gray-200 px-4 sm:px-10 py-10 scroll-mt-16"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
