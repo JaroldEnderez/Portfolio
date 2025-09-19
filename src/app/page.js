@@ -144,8 +144,8 @@ export default function HomePage() {
                   <span key={i} className="rounded-full px-2 py-1 bg-gray-300">{t}</span>
                 ))}
               </div>
-              <Link href={project.link}>
-                <button className="mt-2 rounded-full bg-black text-white px-3 py-1 text-sm hover:bg-blue-700">
+              <Link href={`/projects/${project.id}`}>
+                <button className="cursor-pointer mt-2 rounded-full bg-black text-white px-3 py-1 text-sm hover:bg-blue-700">
                   View Project →
                 </button>
               </Link>
